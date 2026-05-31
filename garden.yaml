@@ -1,0 +1,13 @@
+# cargo install garden-tools
+trees:
+  quasikinda:
+    url: git@github.com:quasikinda/quasikinda.github.io
+    description: addyroth.com
+    path: ${GARDEN_CONFIG_DIR}
+
+commands:
+  build: |
+    jekyll build --destination "${prefix}"
+
+variables:
+  prefix: "${TREE_PATH}/build"
