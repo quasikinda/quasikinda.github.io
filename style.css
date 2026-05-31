@@ -14,6 +14,9 @@ a:hover {
 .site-header {
   border-bottom-color: #2a2a2a;
 }
+nav {
+  margin-left: 40px;
+}
 nav.main-nav a {
   color: #999;
 }
@@ -22,12 +25,51 @@ nav.main-nav a.active {
   color: #eee;
   border-bottom-color: #eee;
 }
+/* Container layout */
+.navbar {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+}
+
+/* Turning links into bordered buttons */
+.nav-btn {
+  display: inline-block;        /* Allows padding and vertical margins */
+  text-decoration: none;        /* Removes default underline */
+  padding: 10px 20px;          /* Vertical and horizontal spacing */
+  background-color: transparent;/* Transparent inside for outline style */
+  font-weight: 600;
+  transition: all 0.2s ease;    /* Smooth hover effect transition */
+}
+
+/* Hover state interaction */
+.nav-btn:hover {
+  background-color: #999999;    /* Fills background on hover */
+  cursor: pointer;             /* Shows pointing hand icon */
+}
+
+/* Active/Current page state */
+.nav-btn.active {
+  color: #ffffff;
+  background-color: #0056b3;    /* Slightly darker for active state */
+  border-color: #0056b3;
+}
+
+.gallery-item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%
+}
 .gallery-item .caption {
   color: #888;
+  width: 97%;
 }
+/*
 .gallery-item:hover img {
   opacity: 0.75;
 }
+*/
 .lightbox-overlay {
   background: rgba(0, 0, 0, 0.95);
 }
@@ -111,9 +153,6 @@ nav.main-nav a.active {
 }
 .gallery-item .caption {
   color: #666;
-}
-.gallery-item:hover img {
-  opacity: 0.75;
 }
 .lightbox-overlay {
   background: rgba(0, 0, 0, 0.85);
