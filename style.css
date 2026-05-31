@@ -110,5 +110,5 @@ nav.main-nav a.active {
 }
 
 .site-logo img {
-  filter: invert(1) brightness(0.85);
+  filter: brightness(0.94) invert(1);
 }
