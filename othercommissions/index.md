@@ -1,0 +1,30 @@
+---
+layout: default
+title: Other Commissions
+lightbox: true
+permalink: /othercommissions/
+---
+
+<div class="feature-grid">
+
+  <div class="feature-item">
+    <img src="/images/commission1.jpeg" alt="Commission">
+  </div>
+
+  <div class="feature-item">
+    <img src="/images/commission2.jpeg" alt="Commission">
+  </div>
+
+  <div class="feature-item">
+    <img src="/images/commission3.jpeg" alt="Commission">
+  </div>
+
+  <div class="feature-item">
+    <img src="/images/commission4.jpg" alt="Commission">
+  </div>
+
+  <div class="feature-item">
+    <img src="/images/commission5.jpg" alt="Commission">
+  </div>
+
+</div>

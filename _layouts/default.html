@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} — {% endif %}Adam Roth</title>
+  <meta name="description" content="Adam Roth — Artist &amp; Illustrator, Los Angeles">
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+</head>
+<body>
+
+<div class="site-wrapper">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="{{ '/' | relative_url }}" class="site-logo">
+        <img src="{{ '/images/logo.jpg' | relative_url }}" alt="Adam Roth">
+      </a>
+      <nav class="main-nav">
+        <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Drawings</a>
+        <a href="{{ '/filmtv/' | relative_url }}" {% if page.url contains 'filmtv' %}class="active"{% endif %}>Film/TV Work</a>
+        <a href="{{ '/media-video/' | relative_url }}" {% if page.url contains 'media-video' %}class="active"{% endif %}>Media/Video</a>
+        <a href="{{ '/othercommissions/' | relative_url }}" {% if page.url contains 'othercommissions' %}class="active"{% endif %}>Other Commissions</a>
+        <a href="{{ '/pet-portraits/' | relative_url }}" {% if page.url contains 'pet-portraits' %}class="active"{% endif %}>Pet Portraits</a>
+        <a href="https://moteefe.com/store/adam-roth" target="_blank" rel="noopener">Store</a>
+        <a href="{{ '/curriculumvitae/' | relative_url }}" {% if page.url contains 'curriculumvitae' %}class="active"{% endif %}>CV</a>
+        <a href="mailto:adroth@gmail.com">Email</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="page">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <a href="https://instagram.com/addyroth" target="_blank" rel="noopener">Instagram</a>
+    <a href="mailto:adroth@gmail.com">adroth@gmail.com</a>
+  </footer>
+</div>
+
+{% if page.lightbox %}
+<div class="lightbox-overlay" id="lightbox">
+  <button class="close-btn" onclick="closeLightbox()">&times;</button>
+  <img src="" id="lightbox-img" alt="">
+</div>
+<script>
+  document.querySelectorAll('.gallery-item img').forEach(function(img) {
+    img.parentElement.addEventListener('click', function() {
+      document.getElementById('lightbox-img').src = img.src;
+      document.getElementById('lightbox').classList.add('active');
+    });
+  });
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+  }
+  document.getElementById('lightbox').addEventListener('click', function(e) {
+    if (e.target === this) closeLightbox();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLightbox();
+  });
+</script>
+{% endif %}
+
+</body>
+</html>

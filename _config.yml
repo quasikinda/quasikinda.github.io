@@ -1,0 +1,20 @@
+title: Adam Roth
+description: Artist & Illustrator
+url: ""
+baseurl: ""
+email: adroth@gmail.com
+instagram: addyroth
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Collections
+sass:
+  sass_dir: _sass
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

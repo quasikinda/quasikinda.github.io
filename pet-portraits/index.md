@@ -1,0 +1,15 @@
+---
+layout: default
+title: Pet Portraits
+permalink: /pet-portraits/
+---
+
+<div class="pet-section">
+  <div class="pet-image">
+    <img src="/images/pet_portrait.jpg" alt="Pet Portrait">
+  </div>
+  <div class="pet-text">
+    <p>I do pet portraits.</p>
+    <p>Interested in commissioning one? <a href="mailto:adroth@gmail.com">Get in touch.</a></p>
+  </div>
+</div>
