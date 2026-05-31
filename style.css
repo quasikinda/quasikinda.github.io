@@ -1,0 +1,114 @@
+body {
+  background-color: #111;
+  color: #d4d4d4;
+  font-size: 16pt;
+  font-family: "Helvetica", "Arial", sans-serif;
+  text-decoration: none;
+}
+
+a {
+  color: #c8c8c8;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.site-header {
+  border-bottom-color: #2a2a2a;
+}
+
+nav.main-nav a {
+  color: #999;
+}
+
+nav.main-nav a:hover,
+nav.main-nav a.active {
+  color: #eee;
+  border-bottom-color: #eee;
+}
+
+.gallery-item .caption {
+  color: #888;
+}
+
+.gallery-item:hover img {
+  opacity: 0.75;
+}
+
+.lightbox-overlay {
+  background: rgba(0, 0, 0, 0.95);
+}
+
+.feature-item .caption {
+  color: #888;
+}
+
+.page-content h2 {
+  color: #e2e2e2;
+}
+
+.page-content h3 {
+  color: #777;
+}
+
+.page-content p {
+  color: #aaa;
+}
+
+.page-content .cv-entry {
+  color: #aaa;
+}
+
+.page-content .cv-entry .year {
+  color: #555;
+}
+
+.media-section h2 {
+  color: #e2e2e2;
+}
+
+.media-section h3 {
+  color: #777;
+}
+
+.media-section p {
+  color: #aaa;
+}
+
+.media-section a {
+  color: #a0b4c8;
+}
+
+.media-section a:hover {
+  color: #d0e0ee;
+}
+
+.pet-text {
+  color: #999;
+}
+
+.pet-text a {
+  color: #a0b4c8;
+}
+
+.pet-text a:hover {
+  color: #d0e0ee;
+}
+
+.site-footer {
+  border-top-color: #2a2a2a;
+  color: #555;
+}
+
+.site-footer a {
+  color: #555;
+}
+
+.site-footer a:hover {
+  color: #bbb;
+}
+
+.site-logo img {
+  filter: invert(1) brightness(0.85);
+}
