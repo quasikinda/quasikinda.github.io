@@ -25,12 +25,22 @@ nav.navbar a.active {
   color: #111;
   border-bottom-color: #111;
 }
+
+.gallery-grid {
+  margin: 20px;
+}
+.gallery-item {
+    margin-top: 40px;
+}
+.gallery-item img {
+    display: block;
+    width: 100%
+}
 .gallery-item .caption {
   font-size: 12pt;
   color: #666;
-  margin-left: 20px;
-  margin-right: 20px;
 }
+
 .lightbox-overlay {
   background: rgba(0, 0, 0, 0.85);
 }
@@ -116,14 +126,6 @@ nav.navbar a.active {
   color: #ffffff;
   background-color: #0056b3;    /* Slightly darker for active state */
   border-color: #0056b3;
-}
-
-.gallery-item img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    width: 95%
 }
 
 .video-container {
