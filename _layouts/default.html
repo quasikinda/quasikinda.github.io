@@ -13,15 +13,18 @@
   <header class="site-header">
     <div class="header-inner">
       <a href="{{ '/' | relative_url }}" class="site-logo">
-        <img src="{{ '/images/logo.jpg' | relative_url }}" alt="Adam Roth">
+        <img src="{{ '/images/logo.jpg' | relative_url }}" style="max-width: 96px; height: auto" alt="Adam Roth">
       </a>
-      <nav class="main-nav">
+      <br>
+      <br>
+      <nav class="navbar">
         <a class="nav-btn" href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Drawings</a>
         <a class="nav-btn" href="{{ '/filmtv/' | relative_url }}" {% if page.url contains 'filmtv' %}class="active"{% endif %}>Film / TV Work</a>
         <a class="nav-btn" href="{{ '/media-video/' | relative_url }}" {% if page.url contains 'media-video' %}class="active"{% endif %}>Media / Video</a>
         <a class="nav-btn" href="{{ '/othercommissions/' | relative_url }}" {% if page.url contains 'othercommissions' %}class="active"{% endif %}>Other Commissions</a>
         <a class="nav-btn" href="{{ '/pet-portraits/' | relative_url }}" {% if page.url contains 'pet-portraits' %}class="active"{% endif %}>Pet Portraits</a>
         <a class="nav-btn" href="mailto:adroth@gmail.com">adroth@gmail.com</a>
+        <a class="nav-btn" href="https://instagram.com/addyroth" target="_blank">Instagram</a>
       </nav>
     </div>
   </header>
