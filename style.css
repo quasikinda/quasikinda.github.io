@@ -19,7 +19,6 @@ a:hover {
 }
 nav.navbar a {
   color: #555;
-  margin-left: -20px;
 }
 nav.navbar a:hover,
 nav.navbar a.active {
@@ -128,7 +127,6 @@ nav.navbar a.active {
 
 .video-container {
     width: 100%;            /* Allows the video to expand dynamically to its parent width */
-    max-width: 800px;       /* Optional: Limits how large the video can scale up */
     margin: 0 auto;         /* Centers the video container if max-width is reached */
     aspect-ratio: 16 / 9;   /* Forces the 16:9 standard YouTube aspect ratio */
 }
