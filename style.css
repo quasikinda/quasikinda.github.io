@@ -59,6 +59,9 @@ nav.navbar a.active {
 .page-content .cv-entry .year {
   color: #999;
 }
+.media-section {
+  font-size: 12pt;
+}
 .media-section h2 {
   color: #1a1a1a;
 }
