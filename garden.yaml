@@ -1,4 +1,8 @@
 # cargo install garden-tools
+# usage:
+# $ garden build -vv
+# $ garden serve
+
 trees:
   quasikinda:
     url: git@github.com:quasikinda/quasikinda.github.io
@@ -6,8 +10,8 @@ trees:
     path: ${GARDEN_CONFIG_DIR}
 
 commands:
-  build: |
-    jekyll build --destination "${prefix}"
+  build: jekyll build --destination "${prefix}"
+  serve: jekyll serve --destination "${prefix}"
 
 variables:
   prefix: "${TREE_PATH}/build"
